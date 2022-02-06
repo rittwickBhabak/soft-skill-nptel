@@ -1,5 +1,5 @@
 {% extends 'myapp/base.html' %}
-{% block page_title %}C++ Notes{% endblock page_title %}
+{% block page_title %}Soft Skill Notes{% endblock page_title %}
 
 {% block page_styles %}
 <style>
@@ -11,7 +11,7 @@
 {% block page_content %}
 
 {% for lesson in lesson_list %}
-    <div class="lesson-content border my-3 container p-0">
+    <div class="lesson-content rounded-top border my-3 container p-0">
         <h2 class="bg-dark text-white rounded-top p-2"><span>{{lesson.pk}} </span>{{lesson.title}} <span class="fs-6"> <a target="_blank" href="{% url 'myapp:lesson' lesson.pk %}"><i class="fa fa-external-link"></i></a></span></h2>
         <pre class="p-3">{% if lesson.detail %} {{lesson.detail|safe}} {% endif %}</pre>
     </div>

@@ -7,303 +7,584 @@ django.setup()
 from myapp.models import Lesson 
 
 lessons = {
-    "Introduction to C++, Installing VS Code, g++ & more": {
+    "Introduction: A New Approach To Learning": {
         "index": 1,
-        "vid": "j8nAHeVKL08"
+        "vid": "xBaLgJZ0t6A"
     },
-    "Basic Structure of a C++ Program": {
+    "Planning And Goal-Setting": {
         "index": 2,
-        "vid": "oW2r0r_i5Ps"
+        "vid": "pkbouY5EOHg"
     },
-    "Variables & Comments in C++ in Hindi": {
+    "Human Perceptions: Understanding People": {
         "index": 3,
-        "vid": "jigb6W35zHc"
+        "vid": "z6uFihRyvW4"
     },
-    "Variable Scope & Data Types in C++ in Hindi": {
+    "Types Of Soft Skills: Self-Management Skills": {
         "index": 4,
-        "vid": "JrnQ-915czY"
+        "vid": "9d4MpxycLyQ"
     },
-    "C++ Basic Input/Output & More": {
+    "Aiming For Excellence: Developing Potential And Self-Actualisation": {
         "index": 5,
-        "vid": "J05uoTbGOvQ"
+        "vid": "W7QgPtO7NRE"
     },
-    "C++ Header files & Operators": {
+    "Need Achievement And Spiritual Intelligence": {
         "index": 6,
-        "vid": "7D5A5ZMKRWw"
+        "vid": "D3imbW5VDSk"
     },
-    "C++ Reference Variables & Typecasting": {
+    "Conflict Resolution Skills: Seeking Win-Win Solution": {
         "index": 7,
-        "vid": "a7Wim2t053E"
+        "vid": "CgShhippuP4"
     },
-    "Constants, Manipulators & Operator Precedence": {
+    "Inter-Personal Conflicts: Two Examples": {
         "index": 8,
-        "vid": "i3a-G6Ebh9E"
+        "vid": "CooqaYvwHG0"
     },
-    "C++ Control Structures, If Else and Switch-Case Statement": {
+    "Inter-Personal Conflicts: Two Solutions": {
         "index": 9,
-        "vid": "AY96XFqb934"
+        "vid": "3VoDPuEW028"
     },
-    "For, While and do-while loops in C++": {
+    "Types Of Conflicts: Becoming A Conflict Resolution Expert": {
         "index": 10,
-        "vid": "a7dfSBrTZtE"
+        "vid": "4rQyD8-PNYE"
     },
-    "Break and Continue Statements in C++": {
+    "Types Of Stress: Self-Awareness About Stress": {
         "index": 11,
-        "vid": "DJh5NfK7h-U"
+        "vid": "KvEc2Emo0Ws"
     },
-    "Pointers in C++": {
+    "Regulating Stress: Making The Best Out Of Stress": {
         "index": 12,
-        "vid": "EvYmTCx9BFs"
+        "vid": "GeckKHJqlZE"
     },
-    "Arrays & Pointers Arithmetic in C++": {
+    "Habits: Guiding Principles": {
         "index": 13,
-        "vid": "ePJxpxsnkGw"
+        "vid": "EOJWO2apzQA"
     },
-    "Structures, Unions & Enums in C++": {
+    "Habits: Identifying Good And Bad Habits": {
         "index": 14,
-        "vid": "jCfR7CFlzts"
+        "vid": "QN_YbqiVg80"
     },
-    "Functions & Function Prototypes in C++": {
+    "Habits: Habit Cycle": {
         "index": 15,
-        "vid": "RFLFX1boGwo"
+        "vid": "Y2v92ZZ-Rvk"
     },
-    "Call by Value & Call by Reference in C++": {
+    "Breaking Bad Habits": {
         "index": 16,
-        "vid": "oQbyN-vDghA"
+        "vid": "wpmdkGy-9vo"
     },
-    "Inline Functions, Default Arguments & Constant Arguments in C++": {
+    "Using The Zeigarnik Effect For Productivity And Personal Growth": {
         "index": 17,
-        "vid": "oVvvwEx-gBw"
+        "vid": "1qgH23QX0WY"
     },
-    "Recursions & Recursive Functions in C++": {
+    "Forming Habits Of Success": {
         "index": 18,
-        "vid": "JRKs3s15Kjc"
+        "vid": "VLgs4DUgzVU"
     },
-    "Function Overloading with Examples in C++": {
+    "Communication: Significance Of Listening": {
         "index": 19,
-        "vid": "8qZb09suSHY"
+        "vid": "uU8bdZ7hCXs"
     },
-    "Object Oriented Programming in C++": {
+    "Communication: Active Listening": {
         "index": 20,
-        "vid": "nGJTWaaFdjc"
+        "vid": "AM-nBU8N4So"
     },
-    "Classes, Public and Private access modifiers in C++": {
+    "Communication: Barriers To Active Listening": {
         "index": 21,
-        "vid": "tL8vnfFFzVQ"
+        "vid": "pv1p5Bq19DY"
     },
-    "OOPs Recap & Nesting of Member Functions in C++": {
+    "Telephone Communication: Basic Telephone Skills": {
         "index": 22,
-        "vid": "d363dW0AeS8"
+        "vid": "Qdy-g8y6yK4"
     },
-    "C++ Objects Memory Allocation & using Arrays in Classes": {
+    "Telephone Communication: Advanced Telephone Skills": {
         "index": 23,
-        "vid": "qq05D2yFIHA"
+        "vid": "A4USCXJPEY0"
     },
-    "Static Data Members & Methods in C++ OOPS": {
+    "Telephone Communication: Essential Telephone Skills": {
         "index": 24,
-        "vid": "QcLI2zGVYFo"
+        "vid": "WfEnaZ1hzUs"
     },
-    "Array of Objects & Passing Objects as Function Arguments in C++": {
+    "Technology And Communication: Technological Personality?": {
         "index": 25,
-        "vid": "aKnc1A5NOKo"
+        "vid": "UeDIZdUtEKQ"
     },
-    "Friend Functions in C++": {
+    "Technology And Communication: Mobile Personality?": {
         "index": 26,
-        "vid": "HK6gnkQIgqI"
+        "vid": "Se_ji14zasE"
     },
-    "Friend Classes & Member Friend Functions in C++": {
+    "Topic: Technology And Communication: E-Mail Principles": {
         "index": 27,
-        "vid": "Tk-4KUoatg8"
+        "vid": "uSKKGdHTmak"
     },
-    "More on C++ Friend Functions (Examples & Explanation)": {
+    "Technology And Communication: How Not To Send E-Mails!": {
         "index": 28,
-        "vid": "GTJTsMR_fro"
+        "vid": "mqoewo595-4"
     },
-    "Constructors In C++": {
+    "Technology And Communication: Netiquette": {
         "index": 29,
-        "vid": "EEJUPXFKe8Q"
+        "vid": "LiWKbX_ivtQ"
     },
-    "Parameterized and Default Constructors In C++": {
+    "Technology And Communication: E-Mail Etiquette": {
         "index": 30,
-        "vid": "CYXIlh5DURI"
+        "vid": "pDp_-i4r__Q"
     },
-    "Constructor Overloading In C++": {
+    "Communication Skills: Effective Communication": {
         "index": 31,
-        "vid": "7BmtA-7r1Fg"
+        "vid": "ImtxyrnhrYw"
     },
-    "Constructors With Default Arguments In C++": {
+    "Barriers To Communication: Arising Out Of Sender/Receiver Personality": {
         "index": 32,
-        "vid": "Ok-5YqcGl6c"
+        "vid": "4XbQZJwMCvU"
     },
-    "Dynamic Initialization of Objects Using Constructors": {
+    "Barriers To Communication: Interpersonal Transactions": {
         "index": 33,
-        "vid": "c_9oCs-9fvg"
+        "vid": "O-ZqW9Tvrac"
     },
-    "Copy Constructor in C++": {
+    "Barriers To Communication: Miscommunication": {
         "index": 34,
-        "vid": "jhZjyaNO4Wo"
+        "vid": "BupZVDV6AXI"
     },
-    "Destructor in C++ in Hindi": {
+    "Non-Verbal Communication: Pre-Thinking Assessment-1": {
         "index": 35,
-        "vid": "rm4tGxWBkqs"
+        "vid": "iYjhrZo2tYY"
     },
-    "Inheritance & Its Different Types with Examples in C++": {
+    "Non-Verbal Communication: Pre-Thinking Assessment-2": {
         "index": 36,
-        "vid": "RO1ZYW9NAzg"
+        "vid": "WI8MzZxSF5o"
     },
-    "Inheritance Syntax & Visibility Mode in C++": {
+    "Nonverbal Communication: Introduction And Importance": {
         "index": 37,
-        "vid": "Dmrc82dL7E8"
+        "vid": "c24hvf-7Eh4"
     },
-    "Single Inheritance Deep Dive: Examples + Code": {
+    "Non-Verbal Communication: Issues And Types": {
         "index": 38,
-        "vid": "S1BR0xDdsyM"
+        "vid": "j_FjuhhEmCM"
     },
-    "Protected Access Modifier in C++": {
+    "Non-Verbal Communication: Basics And Universals": {
         "index": 39,
-        "vid": "uHkIhwUspdI"
+        "vid": "7VLWiuCeS5E"
     },
-    "Multilevel Inheritance Deep Dive with Code Example in C++": {
+    "Non-Verbal Communication: Interpreting Non-Verbal Cues": {
         "index": 40,
-        "vid": "BLb6-ZgxqHg"
+        "vid": "DmUCXreXb8s"
     },
-    "Multiple Inheritance Deep Dive with Code Example in C++": {
+    "Body Language: For Interviews": {
         "index": 41,
-        "vid": "h3INeRqf2vU"
+        "vid": "_LC0uaL3dcM"
     },
-    "Exercise on C++ Inheritance": {
+    "Body Language: For Group Discussions": {
         "index": 42,
-        "vid": "SW36UpSdmsM"
+        "vid": "3_AbGrX2PmY"
     },
-    "Ambiguity Resolution in Inheritance in C++": {
+    "Presentation Skills: Overcoming Fear": {
         "index": 43,
-        "vid": "ZqfArYoV9Lg"
+        "vid": "9nXZ8c905jo"
     },
-    "Virtual Base Class in C++": {
+    "Presentation Skills: Becoming A Professional": {
         "index": 44,
-        "vid": "kzMQpPX7TUY"
+        "vid": "thHQTDkRsSA"
     },
-    "Code Example Demonstrating Virtual Base Class in C++": {
+    "Presentation Skills: The Role Of Body Language": {
         "index": 45,
-        "vid": "eYV-TohBaa0"
+        "vid": "qjXYrVI0xn4"
     },
-    "Constructors in Derived Class in C++": {
+    "Presentation Skills: Using Visuals": {
         "index": 46,
-        "vid": "gvOO4H7j_qI"
+        "vid": "JF_m8AhkxuM"
     },
-    "Solution to Exercise on Cpp Inheritance": {
+    "Reading Skills: Effective Reading": {
         "index": 47,
-        "vid": "eGhDSjWGXQc"
+        "vid": "6JWblHNgCMc"
     },
-    "Code Example: Constructors in Derived Class in Cpp": {
+    "Human Relations: Developing Trust And Integrity": {
         "index": 48,
-        "vid": "qHrnTf5DOeI"
+        "vid": "p5JTuC8zpcI"
     },
-    "Initialization list in Constructors in Cpp": {
+    "Lecture 01: INTRODUCTION: Highlights of Developing SS Course-1-24": {
+        "index": 1,
+        "vid": "URtdGiutVew"
+    },
+    "Lecture 02: INTRODUCTION: Highlights of Developing SS Course-25-48": {
+        "index": 2,
+        "vid": "B0faJ4qlo3E"
+    },
+    "Lecture 03: MIND-SET-1: Definitions and Types": {
+        "index": 3,
+        "vid": "93-Jz6yI5XA"
+    },
+    "Lecture 04: MIND-SET-2: Learning Mindsets": {
+        "index": 4,
+        "vid": "aAQjzXcXe1o"
+    },
+    "Lecture 05: MIND-SET-3: Secrets of Developing Growth Mindsets": {
+        "index": 5,
+        "vid": "bwqZVvrVoT0"
+    },
+    "Lecture 06: Managing Time-1: Importance of Time and Understanding Perceptions of Time": {
+        "index": 6,
+        "vid": "XMQ65kqKmUs"
+    },
+    "Lecture 07: Managing Time-2: Using Time Efficiently": {
+        "index": 7,
+        "vid": "BPu94uS8W5Q"
+    },
+    "Lecture 08: Handling Delay-1: Understanding Procrastination": {
+        "index": 8,
+        "vid": "s5thy9KOVWc"
+    },
+    "Lecture 09: Handling Delay-2: Overcoming Procrastination": {
+        "index": 9,
+        "vid": "B6a3TpiUqwA"
+    },
+    "Lecture 10: Assertiveness-1: Don’t Say “Yes” to Make Others Happy!": {
+        "index": 10,
+        "vid": "9n_k1wvBx-M"
+    },
+    "Lecture 11: Assertiveness -2: Types of People": {
+        "index": 11,
+        "vid": "jHnMomzbLZM"
+    },
+    "Lecture 12: Assertiveness -3: How to Say “No”": {
+        "index": 12,
+        "vid": "Dyd6xvwXlWg"
+    },
+    "Lecture 13: Managing Negative Emotions: Controlling Anger": {
+        "index": 13,
+        "vid": "dAdXKtIu1lA"
+    },
+    "Lecture 14: Channelizing Positive Emotions-1: Gaining Power from Positive Thinking-1": {
+        "index": 14,
+        "vid": "xnY8ijWLVFE"
+    },
+    "Lecture 15: Channelizing Positive Emotions-2: Gaining Power from Positive Thinking-2": {
+        "index": 15,
+        "vid": "nILD1cllOpA"
+    },
+    "Lecture 16: People Skills-1: What Makes Others Dislike You?": {
+        "index": 16,
+        "vid": "1-J50E0T80I"
+    },
+    "Lecture 17: People Skills-2: What Makes Others Like You?-1": {
+        "index": 17,
+        "vid": "sTDY1H5HxqI"
+    },
+    "Lecture 18: People Skills-3: What Makes Others Like You?-2": {
+        "index": 18,
+        "vid": "xO0BzqML2P8"
+    },
+    "Lecture 19: People Skills-4: Being Attractive-1": {
+        "index": 19,
+        "vid": "HE39g_hepgE"
+    },
+    "Lecture 20: People Skills-5: Being Attractive-2": {
+        "index": 20,
+        "vid": "p7uLXZS4x2I"
+    },
+    "Lecture 21: English Skills-1: Common Errors-1": {
+        "index": 21,
+        "vid": "4F6WxMbjl5Q"
+    },
+    "Lecture 22: English Skills-2: Common Errors-2": {
+        "index": 22,
+        "vid": "Nj5m8tPYxug"
+    },
+    "Lecture 23: English Skills-3: Common Errors-3": {
+        "index": 23,
+        "vid": "rvk3nNvoe5A"
+    },
+    "Lecture 24: English Skills-4: Common Errors-4": {
+        "index": 24,
+        "vid": "B7OrKTR_9-0"
+    },
+    "Lecture 25: English Skills-5: Common Errors-5": {
+        "index": 25,
+        "vid": "puoAXPpJphQ"
+    },
+    "Lecture 26: Significance of Humour in Communication-1": {
+        "index": 26,
+        "vid": "Y7JqGpDYQb8"
+    },
+    "Lecture 27: Humour in Workplace": {
+        "index": 27,
+        "vid": "ltQGAfwAxSo"
+    },
+    "Lecture 28: Function of Humour in Workplace": {
+        "index": 28,
+        "vid": "TyLj8ZnePGs"
+    },
+    "Lecture 29: Money and Personality": {
+        "index": 29,
+        "vid": "9-ZnBXERnVo"
+    },
+    "Lecture 30: Managing Money": {
+        "index": 30,
+        "vid": "o5eD-G3X5r4"
+    },
+    "Lecture 31: Health and Personality": {
+        "index": 31,
+        "vid": "xOwGL7KtHkQ"
+    },
+    "Lecture 32: Managing Health-1 Importance of Exercise": {
+        "index": 32,
+        "vid": "xpyqd2bBYGE"
+    },
+    "Lecture 33: Managing Health-2 Diet and Sleep": {
+        "index": 33,
+        "vid": "2h47Q9vLS-s"
+    },
+    "Lecture 34: Love and Personality": {
+        "index": 34,
+        "vid": "Py0Yk2xdCQI"
+    },
+    "Lecture 35: Managing Love": {
+        "index": 35,
+        "vid": "HiQokHnoFaE"
+    },
+    "Lecture 36: Ethics and Etiquette": {
+        "index": 36,
+        "vid": "Syd1cQ7kWFU"
+    },
+    "Lecture 37: Business Etiquette": {
+        "index": 37,
+        "vid": "NqlfZOPMqjA"
+    },
+    "Lecture 38: Managing Mind and Memory": {
+        "index": 38,
+        "vid": "g_PeKz3lKU4"
+    },
+    "Lecture 39: Improving Memory": {
+        "index": 39,
+        "vid": "p7rYrbkmFyE"
+    },
+    "Lecture 40: Care for Environment": {
+        "index": 40,
+        "vid": "9Nc6spNjDvI"
+    },
+    "Lecture 1:": {
+        "index": 1,
+        "vid": "l2Wb-qfc50U"
+    },
+    "Lecture 2:": {
+        "index": 2,
+        "vid": "oUrGHwokhKk"
+    },
+    "Lecture 3:": {
+        "index": 3,
+        "vid": "xOByPSPu4NU"
+    },
+    "Lecture 4 :": {
+        "index": 4,
+        "vid": "XK36VJ2DFBM"
+    },
+    "Lecture 5:": {
+        "index": 5,
+        "vid": "aUv2HOO7eV0"
+    },
+    "Lecture 6:": {
+        "index": 6,
+        "vid": "V3WuKqAgUhY"
+    },
+    "Lecture 7:": {
+        "index": 7,
+        "vid": "r_Z4UVCACrM"
+    },
+    "Lecture 8 :": {
+        "index": 8,
+        "vid": "IhIqP-qF-d8"
+    },
+    "Lecture 9 :": {
+        "index": 9,
+        "vid": "ZQakD3ziCYY"
+    },
+    "Lecture 10 :": {
+        "index": 10,
+        "vid": "L08UaY0DV7o"
+    },
+    "Lecture 11": {
+        "index": 11,
+        "vid": "M6rGHLQNl8g"
+    },
+    "Lecture 12": {
+        "index": 12,
+        "vid": "S4w1ABMU_uE"
+    },
+    "Lecture 13": {
+        "index": 13,
+        "vid": "L7ts0QV2-hI"
+    },
+    "Lecture 14": {
+        "index": 14,
+        "vid": "RzYq-h7VcLU"
+    },
+    "Lecture 15 : People Skills": {
+        "index": 15,
+        "vid": "_WG6K_urBTs"
+    },
+    "Lecture 16 : People Skills (Contd.)": {
+        "index": 16,
+        "vid": "oLnNncwKh-E"
+    },
+    "Lecture 17 : People Skills (Contd.)": {
+        "index": 17,
+        "vid": "GybCIZKhyVU"
+    },
+    "Lecture 18 : People Skills (Contd.)": {
+        "index": 18,
+        "vid": "2TSbvpex9VQ"
+    },
+    "Lecture 19 : Specialised Skills": {
+        "index": 19,
+        "vid": "ZB6zuunf6bw"
+    },
+    "Lecture 20 : Specialised Skills (Contd.)": {
+        "index": 20,
+        "vid": "zMOQ_ekoUOs"
+    },
+    "Lecture 21 : Specialised Skills (Contd.)": {
+        "index": 21,
+        "vid": "E3OiXg224vU"
+    },
+    "Lecture 22 : Specialised Skills (Contd.)": {
+        "index": 22,
+        "vid": "482pqnghSyE"
+    },
+    "Lecture 23 ;": {
+        "index": 23,
+        "vid": "6OxSbWZVlQQ"
+    },
+    "Lecture 24 :": {
+        "index": 24,
+        "vid": "4JTxYlo_r2U"
+    },
+    "Lecture 25 :": {
+        "index": 25,
+        "vid": "2BNUqcVGnpc"
+    },
+    "Lecture 26 :": {
+        "index": 26,
+        "vid": "aeb636I2Szw"
+    },
+    "Lecture 27 :": {
+        "index": 27,
+        "vid": "YfUmnL5XyVU"
+    },
+    "Lecture 28 ;": {
+        "index": 28,
+        "vid": "Y99hdGoBh1U"
+    },
+    "Lecture 29 :": {
+        "index": 29,
+        "vid": "UTv14lqTiKs"
+    },
+    "Lecture 30 ;": {
+        "index": 30,
+        "vid": "OZHis3s1F0A"
+    },
+    "Lecture 31 :": {
+        "index": 31,
+        "vid": "QLKtX33y7fs"
+    },
+    "Lecture 32 :": {
+        "index": 32,
+        "vid": "8cDowGYD7no"
+    },
+    "Lecture 33": {
+        "index": 33,
+        "vid": "NZz4wZwjqcQ"
+    },
+    "Lecture 34": {
+        "index": 34,
+        "vid": "NB6UHLUsRfk"
+    },
+    "Lecture 35": {
+        "index": 35,
+        "vid": "FJNjgEBqeZs"
+    },
+    "Lecture 36": {
+        "index": 36,
+        "vid": "NYh_XxbhF4Q"
+    },
+    "Lecture 37": {
+        "index": 37,
+        "vid": "E-Zd_CP5nNw"
+    },
+    "Lecture 38": {
+        "index": 38,
+        "vid": "XPzdARS4uTA"
+    },
+    "Lecture 39": {
+        "index": 39,
+        "vid": "1WmbbnY5RWM"
+    },
+    "Lecture 40": {
+        "index": 40,
+        "vid": "pbgICtpIQOc"
+    },
+    "Lecture 41": {
+        "index": 41,
+        "vid": "U4n2cl-hVEI"
+    },
+    "mod10lec42": {
+        "index": 42,
+        "vid": "wgzed36Vkrk"
+    },
+    "mod10lec43": {
+        "index": 43,
+        "vid": "X37gqLPgO-U"
+    },
+    "mod10lec44": {
+        "index": 44,
+        "vid": "TEV3SxSbMgA"
+    },
+    "mod10lec45": {
+        "index": 45,
+        "vid": "3EN6TEqrJVI"
+    },
+    "mod10lec46": {
+        "index": 46,
+        "vid": "ik4yc1RUYDY"
+    },
+    "mod11lec47": {
+        "index": 47,
+        "vid": "mB3BWT0c3BE"
+    },
+    "mod11lec48": {
+        "index": 48,
+        "vid": "CqwyS0EXtZQ"
+    },
+    "mod11lec49": {
         "index": 49,
-        "vid": "-Re7K7mHtv4"
+        "vid": "K6vGgh3GQJI"
     },
-    "Revisiting Pointers: new and delete Keywords in CPP": {
+    "mod11lec50": {
         "index": 50,
-        "vid": "2Y0b9nFA9s8"
+        "vid": "2SCND-qcfrA"
     },
-    "Pointers to Objects and Arrow Operator in CPP": {
+    "mod11lec51": {
         "index": 51,
-        "vid": "ANpUQgyRPKk"
+        "vid": "bvLHvOmT-dk"
     },
-    "Array of Objects Using Pointers in C++": {
+    "mod12lec52": {
         "index": 52,
-        "vid": "OCmCyYxSi2I"
+        "vid": "Bp3rOv_vl-g"
     },
-    "this Pointer in C++": {
+    "mod12lec53": {
         "index": 53,
-        "vid": "cEOfK_L4gGA"
+        "vid": "7e_Bzg133F4"
     },
-    "Polymorphism in C++": {
+    "mod12lec54": {
         "index": 54,
-        "vid": "B-WWdC-H0zw"
+        "vid": "VG3MIGLjILM"
     },
-    "Pointers to Derived Classes in C++": {
+    "mod12lec55": {
         "index": 55,
-        "vid": "0YQ_yhX46uk"
+        "vid": "UF5iH5bW1Lk"
     },
-    "Virtual Functions in C++": {
+    "mod12lec56": {
         "index": 56,
-        "vid": "fB3JHNnlRfI"
-    },
-    "Virtual Functions Example + Creation Rules in C++": {
-        "index": 57,
-        "vid": "-noYyWtdXSI"
-    },
-    "Abstract Base Class & Pure Virtual Functions in C++": {
-        "index": 58,
-        "vid": "RBAWWutf0fY"
-    },
-    "File I/O in C++: Working with Files": {
-        "index": 59,
-        "vid": "Ma0P9T4nTDA"
-    },
-    "File I/O in C++: Reading and Writing Files": {
-        "index": 60,
-        "vid": "LS1zjr1wog4"
-    },
-    "File I/O in C++: Read/Write in the  Same Program & Closing Files": {
-        "index": 61,
-        "vid": "7ku2AQsWwZE"
-    },
-    "File I/O in C++: open() and eof() functions": {
-        "index": 62,
-        "vid": "U_w-RfMrX18"
-    },
-    "C++ Templates: Must for Competitive Programming": {
-        "index": 63,
-        "vid": "kKJeekDKU30"
-    },
-    "Writing our First C++ Template in VS Code": {
-        "index": 64,
-        "vid": "SuiGXMqGKak"
-    },
-    "C++ Templates: Templates with Multiple Parameters": {
-        "index": 65,
-        "vid": "8SQL9-cQmsw"
-    },
-    "C++ Templates: Class Templates with Default Parameters": {
-        "index": 66,
-        "vid": "IdY8t0n8VBs"
-    },
-    "C++ Function Templates & Function Templates with Parameters": {
-        "index": 67,
-        "vid": "YTS0ShpFsrM"
-    },
-    "Member Function Templates & Overloading Template Functions in C++": {
-        "index": 68,
-        "vid": "Y_RMNcXAM1U"
-    },
-    "The C++ Standard Template Library (STL)": {
-        "index": 69,
-        "vid": "c9iREsYpayk"
-    },
-    "Containers in C++ STL": {
-        "index": 70,
-        "vid": "m0gnToak2-g"
-    },
-    "Vector In C++ STL": {
-        "index": 71,
-        "vid": "wKDvMcJiEPM"
-    },
-    "List In C++ STL": {
-        "index": 72,
-        "vid": "OI4CXwpMBhE"
-    },
-    "Map In C++ STL": {
-        "index": 73,
-        "vid": "KwS-Vbsha1k"
-    },
-    "Function Objects (Functors) In C++ STL": {
-        "index": 74,
-        "vid": "g4AQiptpcI8"
+        "vid": "WTQsPEeKS84"
     }
 }
+
 def populate():
 
     for title, value in lessons.items():
