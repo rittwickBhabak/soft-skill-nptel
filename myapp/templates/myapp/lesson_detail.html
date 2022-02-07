@@ -23,6 +23,21 @@
 #notes-text-content{
     overflow: wrap;
 }
+#is-completed-icon{
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+#is-completed-icon > img{
+    width: 40px;
+    height: 40px;
+    opacity: 0.3;
+}
+#is-completed-icon.completed > img{
+    opacity: 1;
+}
 </style>
 {% endblock page_styles %}
 {% block page_content %}
@@ -30,10 +45,15 @@
         <div class="row">
             <div class="col-6 border" id="video">
                 <iframe class="w-100" src="https://www.youtube.com/embed/{{lesson.video_id}}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="w-100 d-flex -justify-content-between">
-                    <a {% if prev %} href="{% url 'myapp:lesson' prev.pk %}" {% endif %} class="{% if prev %} {% else %} disabled {% endif %}btn btn-sm btn-secondary"><i class="fa fa-arrow-left"></i></a>
-                    <a {% if next %} href="{% url 'myapp:lesson' next.pk %}" {% endif %} class="{% if next %} {% else %} disabled {% endif %}btn btn-sm btn-secondary mx-2"><i class="fa fa-arrow-right"></i></a>
-                    <input type="range" id="scale" value="40" step="1" min="0" max="100">
+                <div class="w-100 d-flex justify-content-between">
+                    <div>
+                        <a {% if prev %} href="{% url 'myapp:lesson' prev.pk %}" {% endif %} class="{% if prev %} {% else %} disabled {% endif %}btn btn-sm btn-secondary"><i class="fa fa-arrow-left"></i></a>
+                        <a {% if next %} href="{% url 'myapp:lesson' next.pk %}" {% endif %} class="{% if next %} {% else %} disabled {% endif %}btn btn-sm btn-secondary mx-2"><i class="fa fa-arrow-right"></i></a>
+                        <input type="range" id="scale" value="40" step="1" min="0" max="100">
+                    </div>
+                    <div>
+                        <button id="is-completed-icon" class="float-end {% if lesson.is_completed %}completed{% endif %}"><img src="https://i.ibb.co/vqRJnwb/check.png" alt=""></button>
+                    </div>
                 </div>
                 <div class="fs-4 lead"><span class="b">{{lesson.pk}} </span>{{lesson.title}}</div>
             </div>
@@ -80,6 +100,7 @@
     let saveBtn = document.querySelector('#save-notes')
     let notesContent = document.querySelector('#notes-text-content')
     let notesEditor = document.querySelector('#notes-text-editor')
+    let isCompletedBtn = document.querySelector('#is-completed-icon')
     
     scale.addEventListener('change', event=>{
         video.style.width = event.target.value + '%';
@@ -120,6 +141,18 @@
         notesContent.classList.toggle('d-none')
         toxEditorContainer.classList.toggle('d-none')
         notesContent.innerHTML = tinyMCE.get('notes-text-editor').setContent(notesContent.innerHTML);
+    })
+    isCompletedBtn.addEventListener('click', event=>{
+        let data = new FormData();
+        data.append("pk", '{{lesson.pk}}')  
+        data.append("csrfmiddlewaretoken", '{{csrf_token}}')
+        
+        axios.post('/mark-completed/{{lesson.pk}}', data)
+        .then(res => {
+            isCompletedBtn.classList.toggle('completed')
+            alert("Saved")
+        })
+        .catch(errors => console.log(errors))
     })
 </script>
 {% endblock page_scripts %}

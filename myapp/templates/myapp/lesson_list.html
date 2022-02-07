@@ -5,7 +5,7 @@
 <div class="container mt-3 mb-5">
     <div class="list-group">
         {% for lesson in lesson_list %}
-            <a href="{% url 'myapp:lesson' lesson.pk %}" class="list-group-item list-group-item-action"><span class="text-dark b">{{forloop.counter}} </span>{{lesson.title}}</a>
+            <a href="{% url 'myapp:lesson' lesson.pk %}" class="list-group-item list-group-item-action {% if lesson.is_completed %}text-success {% else %} text-dark{% endif %} fw-bolder"><span class="">{{forloop.counter}} </span>{{lesson.title}}</a>
         {% endfor %}
     </div>
 </div>

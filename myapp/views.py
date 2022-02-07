@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404, render
-from django.http import JsonResponse 
+from django.http import JsonResponse, HttpResponseForbidden
 from django.views.generic import TemplateView, ListView, CreateView, UpdateView, DeleteView, DetailView
 from .models import Lesson
 
@@ -32,3 +32,11 @@ class NoteList(ListView):
     template_name= 'myapp/note_list.html'
 
 
+
+def mark_completed(request, pk):
+    if request.method == 'POST':
+        lesson = get_object_or_404(Lesson, pk=pk)
+        lesson.is_completed = not lesson.is_completed
+        lesson.save() 
+        return JsonResponse({"status": "success"})
+    return HttpResponseForbidden("Not Allowed")
